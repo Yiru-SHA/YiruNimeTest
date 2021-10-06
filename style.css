@@ -1,0 +1,29 @@
+.project_contain{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    flex-wrap: wrap;
+}
+
+.project_instruction{
+    width: 50%;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center; */
+  } 
+.p_tutorial{
+    display: flex;
+
+}
+  /* p5 Canvas */
+  #myContainer{
+
+      display: flex;
+      margin-top: 300px;    
+      flex-direction: row;
+
+
+  }
+
