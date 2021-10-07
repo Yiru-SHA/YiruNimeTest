@@ -1,34 +1,35 @@
-let value=0;
-let cnv = createCanvas;
-cnv.parent('myContainer');
+let Musicready = false;
+
+document.getElementById('play').addEventListener('click', async () => {
+  await Tone.start();
+  console.log("audio is ready");
+  initializeAudio();
+});
+
+
+
+// function preload() {
+//   myImage = loadImage("Shanghai-shopping-street-night-1000x667.jpeg");
+// }
+
 
 function setup() {
-  createCanvas(400, 400);
+  let cnv = createCanvas(600, 600);
+  cnv.parent('myContainer');
+ // image(myImage, 0, 0);
+
+  // document.getElementById('play').addEventListener('click',()=>{
+  //   background('red');
+  // })
+  // let button = createButton('play')
+  // button.mousePressed();
+
 }
 
 function draw() {
-  // if buttonRed value == 1, background is red, else if buttonRedvalue == 0, background is xxx
-  if(value ==1){
-      background('red');
-  }
-  // if buttonBlue value == 1, background is blue, else if xxxxxxxx
-  if(value==2){
-          background('black');
-  }
-  
-  if(value==3){
-    background('blue');
-  }
+
 }
 
-// if arduino send value to P5, read the value
-function mousePressed() {
-  if (value >= 0){
-  value++;
-  }
-  
-  if(value >3){
-     value=0;
-  }
-    console.log("value"+value);
+function initializeAudio() {
+  console.log("Initialization is ready");
 }
