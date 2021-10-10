@@ -23,7 +23,9 @@ width:50%;
       display: flex;
       /* margin-top: 100px;     */
       flex-direction: row;
-
-
   }
 
+#volume_control{
+  margin-top: 10px; 
+  width: 150px;   
+}  
