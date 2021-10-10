@@ -7,31 +7,46 @@
     <title>Instruments_Shanghai</title>
 
     <!--insert font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira:wght@100&display=swap" rel="stylesheet">
 
     <link href="style.css" rel="stylesheet" />
 </head>
 
 <body>
     <!--PROJECT title-->
-    <h1 class="project_title">Cities' INSTRUMENTS</h1>
+    <h1 class="project_title">CITIES' INSTRUMENTS</h1>
+    <hr align = "left">
 
     <div class="project_contain">
         <!--PROJECT INSTRUCTION-->
         <div class="project_instruction">
-            <p class="p_text">Play with the color of Shanghai</p>
+            <p id="instruction_title" class="p_text">Play with the color of Shanghai</p>
 
-            <p class="p_tutorial">Click Play, and MOVE your mouse hover over different colors.
+            <p id="instruction_content" class="p_tutorial">Have you ever wondered what neon light sound like? Click Play, and MOVE your mouse hover over different colors.
             </p>
 
-            <button id="play">Click to start!</button>
+            <button id="play">PLAY</button>
             <!-- <div>
                 <input id="volumeslider" type="range" min="0" max="100" value="100" step="1">
             </div> -->
 
             <!--give the id of slider and go to app.js to assign and link object-->
-            <div id="volume_control"> </div>
-        
+            <p id="slide_title" class="p_text">Volume Control</p>
 
+            <div class = "slider" id="volume_control"> </div>
+
+            <p id="slide_title" class="p_text">Distortion Level</p>
+
+            <div id="distort_control"> </div>
+
+            <p id="city_location" class="p_text">CURRENT IMAGE LOCATION: NANJING ROAD</p>
+            <p id="credit" class="p_text">Special thanks to Enrique & Adam.</p>
 
         </div>
 

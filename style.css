@@ -1,9 +1,55 @@
+body {
+  background-color: rgba(0, 26, 120, 1);
+  margin-left: 20px;
+}
+
+h1{
+font-family: 'Saira', sans-serif;
+
+font-size: 10pt;
+color: aliceblue;
+letter-spacing: 5pt;
+}
+
+hr{
+  margin-top: 60px;    
+  margin-bottom: 0px;    
+
+  width: 37.3%;
+}
+
 .project_contain{
     display: flex;
+    width: 75%;
     flex-direction: row;
     margin-top: 0px;
     flex-wrap: wrap;
+    /* position:absolute;
+    top:0px;  */
+    color: aliceblue;
+
 }
+
+#instruction_title{
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-right: 0px;
+
+  font-family: 'Saira Stencil One', cursive;
+  font-size: 68pt;
+  line-height: 72pt;
+}
+
+#instruction_content{
+  margin-top: 0px;
+
+  Font-family: 'Saira';
+  font-size: 22pt;
+  line-height: 30pt;
+  margin-right: 100px;
+
+  }
+  
 
 .project_instruction{
     width: 50%;
@@ -19,13 +65,74 @@
 }
   /* p5 Canvas */
   #myContainer{
-width:50%;
+    width:50%;
       display: flex;
-      /* margin-top: 100px;     */
+      margin-top: 0px;  
+      margin-left: 0px;    
+  
       flex-direction: row;
   }
 
+  /* button */
+  #play{
+      display:inline-block;
+      padding:0.2em 2em;
+      border:0.1em solid #FFFFFF;
+      margin:0 0.3em 0.3em 0;
+      border-radius:0.12em;
+      box-sizing: border-box;
+      text-decoration:none;
+      font-family: 'Saira Stencil One', cursive;
+      font-size: 18pt;
+      font-weight:900;
+
+      background-color:#FFFFFF;
+      color:rgba(0, 26, 120, 1);
+      text-align:center;
+      transition: all 0.2s;
+  }
+
+  #play:hover{
+    /* color:#000000; */
+    background-color:rgba(0, 26, 120, 1);
+    color:#FFFFFF;
+  }
+
+    /* @media all and (max-width:30em){
+       #play{
+      display:block;
+      margin:0.4em auto;
+    } */
+      
+
 #volume_control{
-  margin-top: 10px; 
-  width: 150px;   
+  margin-top: 0px; 
 }  
+#distort_control{
+  margin-top: 0px; 
+  width: 150px;   
+  flex-direction: row;
+}  
+
+#slide_title{
+  Font-family: 'Saira';
+  font-size: 12pt;
+  margin-top:20px; 
+  margin-bottom:0px; 
+
+}
+
+#city_location{
+  font-family: 'Saira Stencil One', cursive;
+  font-size: 12pt;
+  margin-top:25px; 
+  margin-bottom: 5px;;
+}
+
+#credit{
+  Font-family: 'Saira';
+  font-size: 10pt;
+  margin:0 0 0 0;
+}
+
+/* // distortSlider.style("width", "150px"); */
